@@ -355,6 +355,32 @@
       margin-right:9px
     }
 
+    .mission-vision{
+      margin-top:42px;
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:20px
+    }
+
+    .mission-vision-card{
+      padding:25px;
+      border:1px solid var(--line);
+      border-radius:7px;
+      background:var(--cream)
+    }
+
+    .mission-vision-card h3{
+      font-family:'Playfair Display',serif;
+      color:var(--green);
+      font-size:1.45rem;
+      margin:0 0 9px
+    }
+
+    .mission-vision-card p{
+      color:var(--muted);
+      margin:0
+    }
+
     .values{
       background:var(--cream)
     }
@@ -986,6 +1012,7 @@
         grid-template-columns:1fr 1fr
       }
 
+      .mission-vision,
       .value-grid,
       .rooms-grid{
         grid-template-columns:1fr
@@ -1219,6 +1246,28 @@
           </a>
 
         </div>
+
+      </div>
+
+      <div class="container mission-vision" aria-label="Our mission and vision">
+
+        <article class="mission-vision-card">
+          <h3>Our Mission</h3>
+          <p>
+            To provide clean, comfortable, and affordable accommodation with
+            warm hospitality, thoughtful service, and a relaxing environment
+            for every guest visiting Calapan City.
+          </p>
+        </article>
+
+        <article class="mission-vision-card">
+          <h3>Our Vision</h3>
+          <p>
+            To become a trusted and preferred boutique hotel in Oriental Mindoro,
+            recognized for comfortable stays, friendly service, and a welcoming
+            atmosphere inspired by the natural beauty and culture of Mindoro.
+          </p>
+        </article>
 
       </div>
 
