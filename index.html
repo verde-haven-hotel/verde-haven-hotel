@@ -1,2558 +1,5202 @@
 <!doctype html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="utf-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <meta name="description" content="Verde Haven Boutique Hotel — an affordable, comfortable, nature-inspired stay in Calapan City, Oriental Mindoro.">
+
   <title>Verde Haven Boutique Hotel | Stay. Relax. Discover.</title>
 
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
+
+
   <style>
+
     :root{
+
       --green:#244b38;
+
       --green2:#3e6b50;
+
       --sage:#e8eee5;
+
       --cream:#f8f5ee;
+
       --beige:#e8ddc9;
+
       --ink:#243128;
+
       --muted:#68736a;
+
       --white:#fff;
+
       --line:#dce3d9;
+
       --shadow:0 16px 45px rgba(34,60,43,.10)
+
     }
+
+
 
     *{box-sizing:border-box}
 
+
+
     html{
+
       scroll-behavior:smooth;
+
       scroll-padding-top:88px
+
     }
+
+
 
     body{
+
       margin:0;
+
       color:var(--ink);
+
       background:#fff;
+
       font-family:'DM Sans',sans-serif;
+
       line-height:1.65
+
     }
+
+
 
     img{
+
       max-width:100%;
+
       display:block
+
     }
+
+
 
     a{
+
       color:inherit;
+
       text-decoration:none
+
     }
+
+
 
     button,input,select,textarea{
+
       font:inherit
+
     }
+
+
 
     .container{
+
       width:min(1160px,92%);
+
       margin-inline:auto
+
     }
+
+
 
     .topbar{
+
       background:var(--green);
+
       color:#f6f4ec;
+
       font-size:.82rem;
+
       padding:8px 0
+
     }
+
+
 
     .topbar .container{
+
       display:flex;
+
       justify-content:space-between;
+
       gap:12px;
+
       flex-wrap:wrap
+
     }
+
+
 
     header{
+
       position:sticky;
+
       top:0;
+
       z-index:20;
+
       background:rgba(255,255,255,.96);
+
       backdrop-filter:blur(12px);
+
       border-bottom:1px solid rgba(220,227,217,.8)
+
     }
+
+
 
     .nav{
+
       height:78px;
+
       display:flex;
+
       align-items:center;
+
       justify-content:space-between;
+
       gap:20px
+
     }
+
+
 
     .brand{
+
       display:flex;
+
       align-items:center;
+
       gap:11px;
+
       min-width:max-content
+
     }
+
+
 
     .brand-mark{
+
       width:45px;
+
       height:45px;
+
       border-radius:50%;
+
       display:grid;
+
       place-items:center;
+
       background:var(--sage);
+
       color:var(--green)
+
     }
+
+
 
     .brand-mark svg{
+
       width:29px
+
     }
+
+
 
     .brand-name{
+
       font-family:'Playfair Display',serif;
+
       font-size:1.04rem;
+
       line-height:1.15;
+
       letter-spacing:.04em;
+
       color:var(--green);
+
       font-weight:700
+
     }
+
+
 
     .brand-sub{
+
       display:block;
+
       font-family:'DM Sans',sans-serif;
+
       font-size:.61rem;
+
       letter-spacing:.19em;
+
       margin-top:4px;
+
       font-weight:600
+
     }
+
+
 
     .navlinks{
+
       display:flex;
+
       align-items:center;
+
       gap:25px;
+
       font-size:.9rem;
+
       color:#39483d
+
     }
+
+
 
     .navlinks a:hover{
+
       color:var(--green2)
+
     }
+
+
 
     .btn{
+
       border:0;
+
       display:inline-flex;
+
       align-items:center;
+
       justify-content:center;
+
       gap:8px;
+
       padding:13px 20px;
+
       border-radius:5px;
+
       background:var(--green);
+
       color:white;
+
       font-weight:700;
+
       font-size:.9rem;
+
       cursor:pointer;
+
       transition:.2s
+
     }
+
+
 
     .btn:hover{
+
       background:#173728;
+
       transform:translateY(-1px)
+
     }
+
+
 
     .btn-outline{
+
       background:transparent;
+
       border:1px solid rgba(255,255,255,.8);
+
       color:#fff
+
     }
+
+
 
     .btn-outline:hover{
+
       background:#fff;
+
       color:var(--green)
+
     }
+
+
 
     .menu-toggle{
+
       display:none;
+
       border:1px solid var(--line);
+
       background:white;
+
       border-radius:5px;
+
       padding:9px 11px;
+
       color:var(--green)
+
     }
+
+
 
     .hero{
+
       min-height:600px;
+
       position:relative;
+
       display:flex;
+
       align-items:center;
+
       color:white;
+
       background:
+
         linear-gradient(90deg,rgba(17,44,30,.78),rgba(17,44,30,.42) 52%,rgba(17,44,30,.08)),
+
         url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85')
+
         center/cover
+
     }
+
+
 
     .hero-content{
+
       padding:90px 0 110px;
+
       max-width:700px
+
     }
+
+
 
     .eyebrow{
+
       text-transform:uppercase;
+
       letter-spacing:.19em;
+
       font-weight:700;
+
       font-size:.75rem
+
     }
+
+
 
     .hero .eyebrow{
+
       color:#e7d8b9
+
     }
+
+
 
     .hero h1{
+
       font-family:'Playfair Display',serif;
+
       font-size:clamp(3rem,7vw,5.7rem);
+
       line-height:1.03;
+
       margin:18px 0
+
     }
+
+
 
     .hero h1 em{
+
       font-weight:500;
+
       color:#e8ddc9
+
     }
+
+
 
     .hero p{
+
       font-size:1.1rem;
+
       max-width:570px;
+
       color:#f1f3ee;
+
       margin:0 0 28px
+
     }
+
+
 
     .hero-actions{
+
       display:flex;
+
       gap:12px;
+
       flex-wrap:wrap
+
     }
+
+
 
     .hero-note{
+
       position:absolute;
+
       bottom:0;
+
       left:0;
+
       right:0;
+
       background:rgba(255,255,255,.96);
+
       color:var(--green);
+
       padding:17px 0
+
     }
+
+
 
     .trust-row{
+
       display:flex;
+
       justify-content:space-between;
+
       gap:20px;
+
       flex-wrap:wrap;
+
       font-size:.87rem;
+
       font-weight:600
+
     }
+
+
 
     .trust-row span{
+
       display:flex;
+
       align-items:center;
+
       gap:9px
+
     }
+
+
 
     .trust-row b{
+
       font-size:1.05rem
+
     }
+
+
 
     section{
+
       padding:88px 0
+
     }
+
+
 
     .section-head{
+
       max-width:680px;
+
       margin:0 auto 42px;
+
       text-align:center
+
     }
+
+
 
     .section-head .eyebrow{
+
       color:var(--green2)
+
     }
+
+
 
     h2{
+
       font-family:'Playfair Display',serif;
+
       font-size:clamp(2.2rem,4vw,3.4rem);
+
       line-height:1.15;
+
       color:var(--green);
+
       margin:12px 0 16px;
+
       font-weight:600
+
     }
+
+
 
     .section-head p,
+
     .muted{
+
       color:var(--muted)
+
     }
+
+
 
     .about-grid{
+
       display:grid;
+
       grid-template-columns:1fr 1fr;
+
       gap:60px;
+
       align-items:center
+
     }
+
+
 
     .about-photo{
+
       position:relative
+
     }
+
+
 
     .about-photo img{
+
       height:510px;
+
       width:100%;
+
       object-fit:cover;
+
       border-radius:8px
+
     }
+
+
 
     .photo-note{
+
       position:absolute;
+
       right:-18px;
+
       bottom:25px;
+
       background:var(--cream);
+
       padding:20px 24px;
+
       border-radius:5px;
+
       box-shadow:var(--shadow);
+
       max-width:220px
+
     }
+
+
 
     .photo-note strong{
+
       font-family:'Playfair Display',serif;
+
       color:var(--green);
+
       font-size:1.35rem;
+
       display:block
+
     }
+
+
 
     .about-copy .eyebrow{
+
       color:var(--green2)
+
     }
+
+
 
     .about-copy h2{
+
       font-size:clamp(2.1rem,3.6vw,3.15rem)
+
     }
+
+
 
     .about-copy p{
+
       color:var(--muted)
+
     }
+
+
 
     .check-list{
+
       list-style:none;
+
       padding:0;
+
       margin:22px 0;
+
       display:grid;
+
       grid-template-columns:1fr 1fr;
+
       gap:12px
+
     }
+
+
 
     .check-list li:before{
+
       content:'✓';
+
       color:var(--green2);
+
       font-weight:700;
+
       margin-right:9px
+
     }
 
-    .mission-vision{
-      margin-top:42px;
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:20px
-    }
 
-    .mission-vision-card{
-      padding:25px;
-      border:1px solid var(--line);
-      border-radius:7px;
-      background:var(--cream)
-    }
-
-    .mission-vision-card h3{
-      font-family:'Playfair Display',serif;
-      color:var(--green);
-      font-size:1.45rem;
-      margin:0 0 9px
-    }
-
-    .mission-vision-card p{
-      color:var(--muted);
-      margin:0
-    }
 
     .values{
+
       background:var(--cream)
+
     }
+
+
 
     .value-grid{
+
       display:grid;
+
       grid-template-columns:repeat(3,1fr);
+
       gap:20px
+
     }
+
+
 
     .value-card{
+
       padding:27px;
+
       background:#fff;
+
       border:1px solid #ece9e0;
+
       border-radius:7px
+
     }
+
+
 
     .value-icon{
+
       width:48px;
+
       height:48px;
+
       border-radius:50%;
+
       display:grid;
+
       place-items:center;
+
       background:var(--sage);
+
       font-size:1.3rem;
+
       margin-bottom:18px
+
     }
+
+
 
     .value-card h3{
+
       font-family:'Playfair Display',serif;
+
       font-size:1.35rem;
+
       color:var(--green);
+
       margin:0 0 9px
+
     }
+
+
 
     .value-card p{
+
       color:var(--muted);
+
       margin:0;
+
       font-size:.94rem
+
     }
+
+
 
     .rooms-grid{
+
       display:grid;
+
       grid-template-columns:repeat(3,1fr);
+
       gap:23px
+
     }
+
+
 
     .room-card{
+
       border:1px solid var(--line);
+
       border-radius:7px;
+
       overflow:hidden;
+
       background:white;
+
       box-shadow:0 5px 20px rgba(30,55,38,.04)
+
     }
+
+
 
     .room-img{
+
       height:230px;
+
       position:relative;
+
       overflow:hidden
+
     }
+
+
 
     .room-img img{
+
       height:100%;
+
       width:100%;
+
       object-fit:cover;
+
       transition:transform .45s
+
     }
+
+
 
     .room-card:hover .room-img img{
+
       transform:scale(1.04)
+
     }
+
+
 
     .room-label{
+
       position:absolute;
+
       top:15px;
+
       left:15px;
+
       background:var(--cream);
+
       color:var(--green);
+
       padding:6px 11px;
+
       border-radius:3px;
+
       font-size:.75rem;
+
       font-weight:700
+
     }
+
+
 
     .room-body{
+
       padding:22px
+
     }
+
+
 
     .room-body h3{
+
       font-family:'Playfair Display',serif;
+
       color:var(--green);
+
       font-size:1.45rem;
+
       margin:0 0 7px
+
     }
+
+
 
     .room-body p{
+
       font-size:.91rem;
+
       color:var(--muted);
+
       min-height:50px
+
     }
+
+
 
     .amenities{
+
       display:flex;
+
       flex-wrap:wrap;
+
       gap:8px;
+
       margin:15px 0 19px
+
     }
+
+
 
     .amenities span{
+
       font-size:.75rem;
+
       background:var(--sage);
+
       color:#385a43;
+
       padding:5px 8px;
+
       border-radius:3px
+
     }
+
+
 
     .room-bottom{
+
       display:flex;
+
       align-items:center;
+
       justify-content:space-between;
+
       border-top:1px solid var(--line);
+
       padding-top:15px;
+
       gap:10px
+
     }
+
+
 
     .price{
+
       font-weight:700;
+
       color:var(--green);
+
       font-size:1.2rem
+
     }
+
+
 
     .price small{
+
       font-size:.72rem;
+
       font-weight:400;
+
       color:var(--muted)
+
     }
+
+
 
     .text-btn{
+
       color:var(--green);
+
       font-weight:700;
+
       font-size:.88rem;
+
       border:0;
+
       background:none;
+
       cursor:pointer;
+
       padding:0
+
     }
+
+
 
     .experience{
+
       background:var(--green);
+
       color:white
+
     }
+
+
 
     .experience .section-head h2{
+
       color:white
+
     }
+
+
 
     .experience .section-head p{
+
       color:#d6e1d7
+
     }
+
+
 
     .experience .eyebrow{
+
       color:#d9c9a9
+
     }
+
+
 
     .experience-grid{
+
       display:grid;
+
       grid-template-columns:repeat(4,1fr);
+
       gap:24px
+
     }
+
+
 
     .experience-item{
+
       border-top:1px solid rgba(255,255,255,.3);
+
       padding-top:20px
+
     }
+
+
 
     .experience-item .num{
+
       font-family:'Playfair Display',serif;
+
       font-size:2.3rem;
+
       color:#d8c8a9
+
     }
+
+
 
     .experience-item h3{
+
       font-size:1.05rem;
+
       margin:8px 0
+
     }
+
+
 
     .experience-item p{
+
       font-size:.87rem;
+
       color:#d6e1d7;
+
       margin:0
+
     }
+
+
 
     .booking{
+
       background:var(--sage)
+
     }
+
+
 
     .booking-grid{
+
       display:grid;
+
       grid-template-columns:.8fr 1.2fr;
+
       gap:55px;
+
       align-items:start
+
     }
+
+
 
     .booking-intro h2{
+
       font-size:clamp(2.2rem,4vw,3.2rem)
+
     }
+
+
 
     .booking-intro p{
+
       color:var(--muted)
+
     }
+
+
 
     .booking-points{
+
       display:grid;
+
       gap:15px;
+
       margin-top:26px
+
     }
+
+
 
     .booking-point{
+
       display:flex;
+
       gap:12px;
+
       align-items:flex-start
+
     }
+
+
 
     .booking-point .symbol{
+
       background:white;
+
       border-radius:50%;
+
       width:38px;
+
       height:38px;
+
       display:grid;
+
       place-items:center;
+
       flex:none;
+
       color:var(--green)
+
     }
+
+
 
     .booking-point strong{
+
       display:block;
+
       color:var(--green)
+
     }
+
+
 
     .booking-point span{
+
       font-size:.88rem;
+
       color:var(--muted)
+
     }
+
+
 
     .booking-form{
+
       background:white;
+
       border-radius:8px;
+
       padding:32px;
+
       box-shadow:var(--shadow)
+
     }
+
+
 
     .booking-form h3{
+
       font-family:'Playfair Display',serif;
+
       color:var(--green);
+
       font-size:1.7rem;
+
       margin:0 0 6px
+
     }
+
+
 
     .form-intro{
+
       font-size:.9rem;
+
       color:var(--muted);
+
       margin:0 0 22px
+
     }
+
+
 
     .form-grid{
+
       display:grid;
+
       grid-template-columns:1fr 1fr;
+
       gap:16px
+
     }
+
+
 
     .field{
+
       display:flex;
+
       flex-direction:column;
+
       gap:7px
+
     }
+
+
 
     .field.full{
+
       grid-column:1/-1
+
     }
+
+
 
     .field label{
+
       font-size:.83rem;
+
       font-weight:700;
+
       color:#39483d
+
     }
+
+
 
     .field input,
+
     .field select,
+
     .field textarea{
+
       width:100%;
+
       border:1px solid #d8dfd6;
+
       border-radius:4px;
+
       padding:12px 13px;
+
       background:#fff;
+
       color:var(--ink);
+
       outline:none
+
     }
+
+
 
     .field input:focus,
+
     .field select:focus,
+
     .field textarea:focus{
+
       border-color:var(--green2);
+
       box-shadow:0 0 0 3px rgba(62,107,80,.1)
+
     }
+
+
 
     .field textarea{
+
       resize:vertical;
+
       min-height:85px
+
     }
+
+
 
     .form-note{
+
       font-size:.78rem;
+
       color:var(--muted);
+
       margin:13px 0
+
     }
+
+
 
     .form-result{
+
       display:none;
+
       padding:14px;
+
       background:var(--sage);
+
       border-left:4px solid var(--green2);
+
       margin-top:18px;
+
       border-radius:3px;
+
       font-size:.9rem
+
     }
+
+
 
     .form-result.show{
+
       display:block
+
     }
+
+
 
     .form-result strong{
+
       color:var(--green)
+
     }
+
+
 
     .contact-grid{
+
       display:grid;
+
       grid-template-columns:1fr 1fr;
+
       gap:35px
+
     }
+
+
 
     .contact-card{
+
       border:1px solid var(--line);
+
       padding:28px;
+
       border-radius:7px
+
     }
+
+
 
     .contact-card h3{
+
       font-family:'Playfair Display',serif;
+
       color:var(--green);
+
       font-size:1.5rem;
+
       margin:0 0 20px
+
     }
+
+
 
     .contact-row{
+
       display:flex;
+
       gap:13px;
+
       margin:17px 0
+
     }
+
+
 
     .contact-row .symbol{
+
       color:var(--green);
+
       font-size:1.1rem;
+
       width:24px
+
     }
+
+
 
     .contact-row strong{
+
       display:block
+
     }
+
+
 
     .contact-row p{
+
       margin:2px 0;
+
       color:var(--muted);
+
       font-size:.9rem
+
     }
+
+
 
     .contact-row a{
+
       color:var(--green2);
+
       font-weight:600;
+
       text-decoration:underline;
+
       cursor:pointer;
+
       pointer-events:auto
+
     }
+
+
 
     .contact-row a:hover{
+
       color:var(--green);
+
       text-decoration:none
+
     }
+
+
 
     /* CLICKABLE SOCIAL MEDIA */
+
     .social-link{
+
       display:inline-flex;
+
       align-items:center;
+
       gap:7px;
+
       padding:9px 13px;
+
       margin-top:4px;
+
       border-radius:5px;
+
       background:var(--sage);
+
       color:var(--green) !important;
+
       font-weight:700 !important;
+
       text-decoration:none !important;
+
       cursor:pointer;
+
       pointer-events:auto;
+
       border:1px solid var(--line);
+
       transition:.2s
+
     }
+
+
 
     .social-link:hover{
+
       background:var(--green);
+
       color:white !important;
+
       border-color:var(--green);
+
       transform:translateY(-1px)
+
     }
+
+
 
     .map-frame{
+
       width:100%;
+
       height:320px;
+
       border:0;
+
       border-radius:7px;
+
       background:var(--sage)
+
     }
+
+
 
     .faq{
+
       margin-top:50px
+
     }
+
+
 
     .faq details{
+
       border-bottom:1px solid var(--line);
+
       padding:18px 0
+
     }
+
+
 
     .faq summary{
+
       cursor:pointer;
+
       font-weight:700;
+
       color:var(--green)
+
     }
+
+
 
     .faq details p{
+
       color:var(--muted);
+
       margin:12px 0 0
+
     }
+
+
 
     .cta-band{
+
       background:var(--cream);
+
       padding:42px 0
+
     }
+
+
 
     .cta-inner{
+
       display:flex;
+
       justify-content:space-between;
+
       align-items:center;
+
       gap:25px
+
     }
+
+
 
     .cta-inner h2{
+
       font-size:clamp(1.8rem,3vw,2.5rem);
+
       margin:0
+
     }
+
+
 
     .cta-inner p{
+
       color:var(--muted);
+
       margin:7px 0 0
+
     }
+
+
 
     footer{
+
       background:#172f23;
+
       color:#e6eee7;
+
       padding:40px 0 20px
+
     }
+
+
 
     .footer-top{
+
       display:flex;
+
       justify-content:space-between;
+
       gap:35px;
+
       flex-wrap:wrap;
+
       padding-bottom:28px
+
     }
+
+
 
     .footer-brand{
+
       max-width:390px
+
     }
+
+
 
     .footer-brand .brand-name{
+
       color:white
+
     }
+
+
 
     .footer-brand p{
+
       color:#c3d0c5;
+
       font-size:.9rem
+
     }
+
+
 
     .footer-links{
+
       display:flex;
+
       gap:18px;
+
       flex-wrap:wrap;
+
       font-size:.88rem;
+
       color:#d8e3da
+
     }
+
+
 
     .footer-links a:hover{
+
       color:white
+
     }
 
+
+
     .copyright{
+
       border-top:1px solid rgba(255,255,255,.15);
+
       padding-top:17px;
+
       font-size:.78rem;
+
       color:#b7c8ba;
+
       display:flex;
+
       justify-content:space-between;
+
       gap:15px;
+
       flex-wrap:wrap
+
     }
+
+
 
     @media(max-width:900px){
 
+
+
       .navlinks{
+
         gap:13px;
+
         font-size:.82rem
+
       }
+
+
 
       .nav .btn{
+
         padding:11px 13px
+
       }
+
+
 
       .about-grid{
+
         gap:35px
+
       }
+
+
 
       .rooms-grid{
+
         gap:14px
+
       }
+
+
 
       .room-img{
+
         height:190px
+
       }
+
+
 
       .booking-grid{
+
         gap:28px
+
       }
 
+
+
       .experience-grid{
+
         grid-template-columns:repeat(2,1fr)
+
       }
+
     }
+
+
 
     @media(max-width:700px){
 
+
+
       .topbar .container{
+
         justify-content:center;
+
         text-align:center
+
       }
+
+
 
       .nav{
+
         height:70px
+
       }
+
+
 
       .menu-toggle{
+
         display:block
+
       }
+
+
 
       .navlinks{
+
         display:none;
+
         position:absolute;
+
         top:70px;
+
         left:0;
+
         right:0;
+
         background:white;
+
         padding:18px 5%;
+
         border-bottom:1px solid var(--line);
+
         flex-direction:column;
+
         align-items:stretch;
+
         gap:0
+
       }
+
+
 
       .navlinks.open{
+
         display:flex
+
       }
+
+
 
       .navlinks a{
+
         padding:12px 0;
+
         border-bottom:1px solid #edf0eb
+
       }
+
+
 
       .nav .nav-cta{
+
         display:none
+
       }
+
+
 
       .hero{
+
         min-height:650px;
+
         background-position:58% center
+
       }
+
+
 
       .hero-content{
+
         padding:65px 0 125px
+
       }
+
+
 
       .hero p{
+
         font-size:1rem
+
       }
+
+
 
       .trust-row{
+
         justify-content:flex-start;
+
         gap:12px 22px
+
       }
+
+
 
       .trust-row span{
+
         font-size:.78rem
+
       }
+
+
 
       section{
+
         padding:65px 0
+
       }
+
+
 
       .about-grid,
+
       .booking-grid,
+
       .contact-grid{
+
         grid-template-columns:1fr
+
       }
+
+
 
       .about-photo img{
+
         height:380px
+
       }
+
+
 
       .photo-note{
+
         right:10px
+
       }
+
+
 
       .check-list{
+
         grid-template-columns:1fr 1fr
+
       }
 
-      .mission-vision,
+
+
       .value-grid,
+
       .rooms-grid{
+
         grid-template-columns:1fr
+
       }
+
+
 
       .room-img{
+
         height:250px
+
       }
+
+
 
       .room-body p{
+
         min-height:0
+
       }
+
+
 
       .experience-grid{
+
         gap:22px
+
       }
+
+
 
       .booking-form{
+
         padding:23px
+
       }
+
+
 
       .form-grid{
+
         grid-template-columns:1fr
+
       }
+
+
 
       .field.full{
+
         grid-column:auto
+
       }
+
+
 
       .cta-inner{
+
         align-items:flex-start;
+
         flex-direction:column
+
       }
+
+
 
       .map-frame{
+
         height:280px
+
       }
+
+
 
       .footer-top{
+
         flex-direction:column
+
       }
 
+
+
       .social-link{
+
         padding:10px 13px
+
       }
+
     }
+
+
 
     @media(prefers-reduced-motion:reduce){
 
+
+
       html{
+
         scroll-behavior:auto
+
       }
 
+
+
       *,*:before,*:after{
+
         transition:none!important
+
       }
+
     }
+
+
+
+
+
+    .site-search{display:flex;align-items:center;gap:7px;width:clamp(190px,22vw,265px);flex-shrink:0}
+    .site-search input{width:100%;min-width:0;border:1px solid #d6dfd4;border-radius:999px;padding:10px 14px;background:#fbfcfa;color:var(--ink);font-size:.86rem;outline:none;transition:border-color .2s,box-shadow .2s}
+    .site-search input:focus{border-color:var(--green2);box-shadow:0 0 0 3px rgba(62,107,80,.12)}
+    .site-search button{width:41px;height:41px;flex:none;border:0;border-radius:50%;background:var(--green);color:#fff;font-size:1.25rem;cursor:pointer;transition:background .2s,transform .2s}
+    .site-search button:hover{background:var(--green2);transform:translateY(-1px)}
+    .search-status{width:min(1160px,92%);margin:10px auto 0;padding:0;color:var(--muted);font-size:.88rem}
+    .search-status:not(:empty){padding:10px 14px;background:var(--sage);border-left:3px solid var(--green2);border-radius:4px}
+    .search-status:empty{display:none}
+    .search-highlight{animation:searchPulse 1.4s ease}
+    @keyframes searchPulse{0%,100%{box-shadow:0 0 0 0 rgba(62,107,80,0)}35%{box-shadow:0 0 0 5px rgba(62,107,80,.2)}}
+    .about-info{background:linear-gradient(180deg,#fff 0%,var(--cream) 100%);padding:62px 0}
+    .about-info-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:0}
+    .about-info-card{position:relative;overflow:hidden;background:rgba(255,255,255,.94);border:1px solid #e1e7de;border-radius:12px;padding:28px 28px 28px 31px;box-shadow:0 10px 28px rgba(34,60,43,.06);transition:transform .2s,box-shadow .2s}
+    .about-info-card:before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:linear-gradient(180deg,var(--green2),#b5c9ad)}
+    .about-info-card:hover{transform:translateY(-3px);box-shadow:0 15px 32px rgba(34,60,43,.1)}
+    .about-info-card h3{display:flex;align-items:center;gap:10px;margin:0 0 12px;color:var(--green);font-family:'Playfair Display',serif;font-size:1.45rem}
+    .about-info-card h3:before{display:grid;place-items:center;width:35px;height:35px;flex:none;border-radius:50%;background:var(--sage);font-family:'DM Sans',sans-serif;font-size:1rem}
+    #mission h3:before{content:"✦"}
+    #vision h3:before{content:"⌁"}
+    #target-market h3:before{content:"♧"}
+    #core-values h3:before{content:"♡"}
+    .about-info-card p{margin:0;color:var(--muted);line-height:1.75}
+    .about-info-card ul{margin:0;padding-left:20px;color:var(--muted)}
+    .about-info-card li{padding:3px 0;line-height:1.55}
+    .about-info-card li::marker{color:var(--green2)}
+    @media(max-width:1100px){.site-search{width:200px}.navlinks{gap:14px}}
+    @media(max-width:900px){.site-search{order:5;width:100%;max-width:none;margin:8px 0 2px}.nav{height:auto;min-height:78px;flex-wrap:wrap;padding:10px 0}.about-info-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:700px){.site-search{order:5}.nav{height:auto;min-height:70px}.about-info{padding:48px 0}.about-info-grid{grid-template-columns:1fr}.about-info-card{padding:23px 22px 23px 26px}}
+
+
+
   </style>
+
 </head>
+
+
 
 <body>
 
+
+
   <div class="topbar">
+
     <div class="container">
+
       <span>✦ A relaxing local stay in Calapan City, Oriental Mindoro</span>
+
       <span>Thoughtful hospitality, inspired by nature</span>
+
     </div>
+
   </div>
 
+
+
   <header>
+
     <div class="container nav">
+
+
 
       <a class="brand" href="#home" aria-label="Verde Haven Boutique Hotel home">
 
+
+
         <span class="brand-mark" aria-hidden="true">
+
           <svg viewBox="0 0 48 48" fill="none">
+
             <path d="M24 39V21" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+
             <path d="M24 28C9 28 7 16 8 9c12 0 19 6 16 19Z" fill="currentColor" opacity=".9"/>
+
             <path d="M24 22C24 10 32 6 41 7c0 11-6 18-17 19" fill="currentColor"/>
+
             <path d="M13 39h22M17 34h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+
           </svg>
+
         </span>
+
+
 
         <span class="brand-name">
+
           VERDE HAVEN
+
           <span class="brand-sub">BOUTIQUE HOTEL</span>
+
         </span>
 
+
+
       </a>
+
+
 
       <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+
         <a href="#home">Home</a>
+
         <a href="#about">About</a>
+
         <a href="#rooms">Rooms & Rates</a>
+
         <a href="#booking">Reservations</a>
+
         <a href="#contact">Contact</a>
+
       </nav>
 
+
+
+      <form class="site-search" id="siteSearchForm" role="search" aria-label="Search this website">
+
+        <label for="siteSearch" class="sr-only" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Search website</label>
+
+        <input id="siteSearch" type="search" placeholder="Search the website…" autocomplete="off">
+
+        <button type="submit" aria-label="Search">⌕</button>
+
+      </form>
+
+
+
       <a class="btn nav-cta" href="#booking">
+
         Book Your Stay ↗
+
       </a>
 
+
+
       <button
+
         class="menu-toggle"
+
         id="menuToggle"
+
         aria-label="Open navigation menu"
+
         aria-expanded="false">
+
         ☰
+
       </button>
 
+
+
     </div>
+
   </header>
+
+  <p class="search-status" id="searchStatus" role="status" aria-live="polite"></p>
+
+
 
   <main>
 
+
+
     <section class="hero" id="home">
 
+
+
       <div class="container">
+
+
 
         <div class="hero-content">
 
+
+
           <div class="eyebrow">
+
             Your Mindoro stay begins here
+
           </div>
 
+
+
           <h1>
+
             Find your calm.<br>
+
             <em>Feel at home.</em>
+
           </h1>
 
+
+
           <p>
+
             Discover a comfortable and affordable stay with thoughtful touches,
+
             warm Filipino hospitality, and the easy charm of Calapan City.
+
           </p>
+
+
 
           <div class="hero-actions">
 
+
+
             <a class="btn" href="#booking">
+
               Book Your Stay <span>→</span>
+
             </a>
 
+
+
             <a class="btn btn-outline" href="#rooms">
+
               Explore Our Rooms
+
             </a>
+
+
 
           </div>
 
+
+
         </div>
 
+
+
       </div>
+
+
 
       <div class="hero-note">
 
+
+
         <div class="container trust-row">
 
+
+
           <span>
+
             <b>✦</b> Comfortable rooms
+
           </span>
 
+
+
           <span>
+
             <b>⌂</b> A welcoming atmosphere
+
           </span>
 
+
+
           <span>
+
             <b>❋</b> Mindoro-inspired hospitality
+
           </span>
 
+
+
           <span>
+
             <b>♡</b> Thoughtful service
+
           </span>
+
+
 
         </div>
 
+
+
       </div>
 
+
+
     </section>
+
+
 
     <section id="about">
 
+
+
       <div class="container about-grid">
+
+
 
         <div class="about-photo">
 
+
+
           <img
+
             src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1100&q=85"
+
             alt="Calm and comfortable boutique hotel room"
+
             loading="lazy"
+
           >
 
+
+
           <div class="photo-note">
+
             <strong>Stay. Relax. Discover.</strong>
+
             <span class="muted">
+
               A little comfort goes a long way.
+
             </span>
+
           </div>
 
+
+
         </div>
+
+
 
         <div class="about-copy">
 
+
+
           <div class="eyebrow">
+
             Welcome to Verde Haven
+
           </div>
 
+
+
           <h2>
+
             A thoughtful stay, rooted in local warmth.
+
           </h2>
 
-          <p>
-            Verde Haven Boutique Hotel is an accommodation concept created
-            for guests who value comfort, convenience, and a relaxing atmosphere.
-            Inspired by the natural beauty and welcoming culture of Mindoro,
-            our brand brings together modern essentials and warm local hospitality.
-          </p>
+
 
           <p>
-            Whether you are visiting Calapan for a family trip, a quick getaway,
-            school activities, or business, Verde Haven aims to make every stay
-            feel easy, restful, and memorable.
+
+            Verde Haven Boutique Hotel is an accommodation concept created
+
+            for guests who value comfort, convenience, and a relaxing atmosphere.
+
+            Inspired by the natural beauty and welcoming culture of Mindoro,
+
+            our brand brings together modern essentials and warm local hospitality.
+
           </p>
+
+
+
+          <p>
+
+            Whether you are visiting Calapan for a family trip, a quick getaway,
+
+            school activities, or business, Verde Haven aims to make every stay
+
+            feel easy, restful, and memorable.
+
+          </p>
+
+
 
           <ul class="check-list">
+
             <li>Clean, cozy rooms</li>
+
             <li>Friendly service</li>
+
             <li>Convenient essentials</li>
+
             <li>Local travel guidance</li>
+
           </ul>
 
+
+
           <a class="btn" href="#rooms">
+
             Discover Our Rooms →
+
           </a>
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+    </section>
+
+
+
+    <section class="about-info" aria-label="About Verde Haven details">
+
+      <div class="container">
+
+        <div class="about-info-grid">
+
+          <article class="about-info-card" id="mission">
+
+            <h3>Our Mission</h3>
+
+            <p>To provide guests with comfortable, affordable, and quality accommodation while delivering friendly and reliable service in a peaceful environment.</p>
+
+          </article>
+
+          <article class="about-info-card" id="vision">
+
+            <h3>Our Vision</h3>
+
+            <p>To become a trusted and preferred boutique hotel in Oriental Mindoro, known for comfortable stays, excellent service, and a relaxing nature-inspired atmosphere.</p>
+
+          </article>
+
+          <article class="about-info-card" id="target-market">
+
+            <h3>Target Market</h3>
+
+            <p>Local and foreign tourists, families, couples, students, young travelers, business travelers, and visitors looking for a comfortable and affordable stay in Calapan City.</p>
+
+          </article>
+
+          <article class="about-info-card" id="core-values">
+
+            <h3>Our Core Values</h3>
+
+            <ul>
+
+              <li><strong>Comfort</strong> — a clean, cozy, relaxing stay.</li>
+
+              <li><strong>Hospitality</strong> — friendly and respectful service.</li>
+
+              <li><strong>Quality</strong> — dependable service and clean rooms.</li>
+
+              <li><strong>Affordability</strong> — reasonable accommodation rates.</li>
+
+              <li><strong>Local Culture</strong> — appreciation for Mindoro's community and culture.</li>
+
+            </ul>
+
+          </article>
 
         </div>
 
       </div>
 
-      <div class="container mission-vision" aria-label="Our mission and vision">
-
-        <article class="mission-vision-card">
-          <h3>Our Mission</h3>
-          <p>
-            To provide clean, comfortable, and affordable accommodation with
-            warm hospitality, thoughtful service, and a relaxing environment
-            for every guest visiting Calapan City.
-          </p>
-        </article>
-
-        <article class="mission-vision-card">
-          <h3>Our Vision</h3>
-          <p>
-            To become a trusted and preferred boutique hotel in Oriental Mindoro,
-            recognized for comfortable stays, friendly service, and a welcoming
-            atmosphere inspired by the natural beauty and culture of Mindoro.
-          </p>
-        </article>
-
-      </div>
-
     </section>
+
+
 
     <section class="values">
 
+
+
       <div class="container">
+
+
 
         <div class="section-head">
 
+
+
           <div class="eyebrow">
+
             What makes us different
+
           </div>
 
+
+
           <h2>
+
             Comfort in every detail.
+
           </h2>
 
+
+
           <p>
+
             Our promise is simple: a welcoming place to rest,
+
             thoughtful essentials, and a friendly introduction to the best
+
             of the local area.
+
           </p>
 
+
+
         </div>
+
+
 
         <div class="value-grid">
 
+
+
           <article class="value-card">
 
+
+
             <div class="value-icon">
+
               ⌂
+
             </div>
 
+
+
             <h3>
+
               Comfort Comes First
+
             </h3>
 
+
+
             <p>
+
               Clean and comfortable accommodation designed to help guests
+
               slow down, recharge, and feel at ease.
+
             </p>
+
+
 
           </article>
 
+
+
           <article class="value-card">
 
+
+
             <div class="value-icon">
+
               ♧
+
             </div>
 
+
+
             <h3>
+
               Inspired by Mindoro
+
             </h3>
 
+
+
             <p>
+
               A nature-inspired look and a local point of view that celebrate
+
               the warmth and character of the community.
+
             </p>
 
+
+
           </article>
+
+
 
           <article class="value-card">
 
+
+
             <div class="value-icon">
+
               ♡
+
             </div>
 
+
+
             <h3>
+
               Hospitality with Heart
+
             </h3>
 
+
+
             <p>
+
               Helpful service, clear information, and a guest-first approach
+
               from inquiry to check-out.
+
             </p>
 
+
+
           </article>
+
+
 
         </div>
 
+
+
       </div>
 
+
+
     </section>
+
+
 
     <section id="rooms">
 
+
+
       <div class="container">
+
+
 
         <div class="section-head">
 
+
+
           <div class="eyebrow">
+
             Rest your way
+
           </div>
 
+
+
           <h2>
+
             Rooms made for your kind of stay.
+
           </h2>
 
+
+
           <p>
+
             Choose the room that suits your trip. Room availability and rates
+
             may vary, so guests should confirm current details before booking.
+
           </p>
 
+
+
         </div>
+
+
 
         <div class="rooms-grid">
 
+
+
           <article class="room-card">
+
+
 
             <div class="room-img">
 
+
+
               <img
+
                 src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80"
+
                 alt="Standard room with comfortable bed"
+
                 loading="lazy"
+
               >
 
+
+
               <span class="room-label">
+
                 Simple & Comfortable
+
               </span>
+
+
 
             </div>
 
+
+
             <div class="room-body">
 
+
+
               <h3>
+
                 Standard Room
+
               </h3>
 
+
+
               <p>
+
                 A welcoming room for solo travelers or couples looking
+
                 for a restful, practical stay.
+
               </p>
 
+
+
               <div class="amenities">
+
                 <span>1–2 guests</span>
+
                 <span>Wi-Fi</span>
+
                 <span>Air-conditioned</span>
+
                 <span>Private bathroom</span>
+
               </div>
+
+
 
               <div class="room-bottom">
 
+
+
                 <div class="price">
+
                   ₱1,500
+
                   <small>/ night · sample</small>
+
                 </div>
 
+
+
                 <button
+
                   class="text-btn choose-room"
+
                   data-room="Standard Room">
+
                   Choose room →
+
                 </button>
+
+
 
               </div>
 
+
+
             </div>
+
+
 
           </article>
 
+
+
           <article class="room-card">
+
+
 
             <div class="room-img">
 
+
+
               <img
+
                 src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80"
+
                 alt="Deluxe boutique hotel bedroom"
+
                 loading="lazy"
+
               >
 
+
+
               <span class="room-label">
+
                 A Little Extra
+
               </span>
 
+
+
             </div>
+
+
 
             <div class="room-body">
 
+
+
               <h3>
+
                 Deluxe Room
+
               </h3>
 
+
+
               <p>
+
                 Extra space and a relaxing atmosphere for guests who want
+
                 a more leisurely escape.
+
               </p>
 
+
+
               <div class="amenities">
+
                 <span>1–2 guests</span>
+
                 <span>Wi-Fi</span>
+
                 <span>Air-conditioned</span>
+
                 <span>Breakfast option</span>
+
               </div>
+
+
 
               <div class="room-bottom">
 
+
+
                 <div class="price">
+
                   ₱2,200
+
                   <small>/ night · sample</small>
+
                 </div>
 
+
+
                 <button
+
                   class="text-btn choose-room"
+
                   data-room="Deluxe Room">
+
                   Choose room →
+
                 </button>
+
+
 
               </div>
 
+
+
             </div>
 
+
+
           </article>
+
+
 
           <article class="room-card">
 
+
+
             <div class="room-img">
 
+
+
               <img
+
                 src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=80"
+
                 alt="Spacious family hotel room"
+
                 loading="lazy"
+
               >
 
+
+
               <span class="room-label">
+
                 Room for Everyone
+
               </span>
 
+
+
             </div>
+
+
 
             <div class="room-body">
 
+
+
               <h3>
+
                 Family Room
+
               </h3>
 
+
+
               <p>
+
                 A roomy option for families or small groups who want
+
                 to stay together in comfort.
+
               </p>
 
+
+
               <div class="amenities">
+
                 <span>Up to 4 guests</span>
+
                 <span>Wi-Fi</span>
+
                 <span>Air-conditioned</span>
+
                 <span>Extra space</span>
+
               </div>
+
+
 
               <div class="room-bottom">
 
+
+
                 <div class="price">
+
                   ₱3,200
+
                   <small>/ night · sample</small>
+
                 </div>
 
+
+
                 <button
+
                   class="text-btn choose-room"
+
                   data-room="Family Room">
+
                   Choose room →
+
                 </button>
+
+
 
               </div>
 
+
+
             </div>
 
+
+
           </article>
+
+
 
         </div>
 
+
+
       </div>
 
+
+
     </section>
+
+
 
     <section class="experience">
 
+
+
       <div class="container">
+
+
 
         <div class="section-head">
 
+
+
           <div class="eyebrow">
+
             More than a room
+
           </div>
 
+
+
           <h2>
+
             Little comforts. A better stay.
+
           </h2>
 
+
+
           <p>
+
             Practical services and thoughtful assistance to help make
+
             your visit more convenient.
+
           </p>
 
+
+
         </div>
+
+
 
         <div class="experience-grid">
 
+
+
           <div class="experience-item">
 
+
+
             <div class="num">
+
               01
+
             </div>
 
+
+
             <h3>
+
               Free Wi-Fi
+
             </h3>
 
+
+
             <p>
+
               Stay connected with family, friends, or work while you visit.
+
             </p>
+
+
 
           </div>
 
+
+
           <div class="experience-item">
 
+
+
             <div class="num">
+
               02
+
             </div>
 
+
+
             <h3>
+
               Guest Assistance
+
             </h3>
 
+
+
             <p>
+
               Friendly front-desk assistance and helpful local information.
+
             </p>
+
+
 
           </div>
 
+
+
           <div class="experience-item">
 
+
+
             <div class="num">
+
               03
+
             </div>
 
+
+
             <h3>
+
               Housekeeping
+
             </h3>
 
+
+
             <p>
+
               A tidy, welcoming space designed around guest comfort.
+
             </p>
 
+
+
           </div>
+
+
 
           <div class="experience-item">
 
+
+
             <div class="num">
+
               04
+
             </div>
 
+
+
             <h3>
+
               Local Travel Tips
+
             </h3>
 
+
+
             <p>
+
               Get ideas for exploring local food, culture, and nearby attractions.
+
             </p>
 
+
+
           </div>
+
+
 
         </div>
 
+
+
       </div>
 
+
+
     </section>
+
+
 
     <section class="booking" id="booking">
 
+
+
       <div class="container booking-grid">
+
+
 
         <div class="booking-intro">
 
+
+
           <div class="eyebrow">
+
             Plan your visit
+
           </div>
 
+
+
           <h2>
+
             Let’s make room for your next getaway.
+
           </h2>
 
+
+
           <p>
+
             Send us your preferred dates and room type through this
+
             reservation inquiry form.
+
           </p>
+
+
 
           <div class="booking-points">
 
+
+
             <div class="booking-point">
 
+
+
               <div class="symbol">
+
                 ✓
+
               </div>
 
+
+
               <div>
+
                 <strong>
+
                   Easy inquiry
+
                 </strong>
 
+
+
                 <span>
+
                   Share your travel details in a few simple steps.
+
                 </span>
+
               </div>
+
+
 
             </div>
 
+
+
             <div class="booking-point">
 
+
+
               <div class="symbol">
+
                 ⌂
+
               </div>
+
+
 
               <div>
+
                 <strong>
+
                   Choose your room
+
                 </strong>
 
+
+
                 <span>
+
                   Compare Standard, Deluxe, and Family options.
+
                 </span>
+
               </div>
 
+
+
             </div>
+
+
 
             <div class="booking-point">
 
+
+
               <div class="symbol">
+
                 ♡
+
               </div>
+
+
 
               <div>
+
                 <strong>
+
                   Personal assistance
+
                 </strong>
 
+
+
                 <span>
+
                   Contact the hotel for questions and reservation assistance.
+
                 </span>
+
               </div>
 
+
+
             </div>
+
+
 
           </div>
 
+
+
         </div>
+
+
 
         <form class="booking-form" id="bookingForm">
 
+
+
           <h3>
+
             Reservation Inquiry
+
           </h3>
 
+
+
           <p class="form-intro">
+
             Fields marked * are required.
+
           </p>
+
+
 
           <div class="form-grid">
 
+
+
             <div class="field">
+
+
 
               <label for="guestName">
+
                 Full name *
+
               </label>
 
+
+
               <input
+
                 id="guestName"
+
                 name="guestName"
+
                 autocomplete="name"
+
                 required
+
                 placeholder="Your full name"
+
               >
+
+
 
             </div>
 
+
+
             <div class="field">
+
+
 
               <label for="guestEmail">
+
                 Email address *
+
               </label>
 
+
+
               <input
+
                 id="guestEmail"
+
                 name="guestEmail"
+
                 type="email"
+
                 autocomplete="email"
+
                 required
+
                 placeholder="you@example.com"
+
               >
+
+
 
             </div>
 
+
+
             <div class="field">
+
+
 
               <label for="guestPhone">
+
                 Contact number
+
               </label>
 
+
+
               <input
+
                 id="guestPhone"
+
                 name="guestPhone"
+
                 type="tel"
+
                 autocomplete="tel"
+
                 placeholder="09XX XXX XXXX"
+
               >
+
+
 
             </div>
 
+
+
             <div class="field">
+
+
 
               <label for="roomType">
+
                 Room type *
+
               </label>
 
+
+
               <select
+
                 id="roomType"
+
                 name="roomType"
+
                 required>
 
+
+
                 <option value="">
+
                   Choose a room
+
                 </option>
 
+
+
                 <option>
+
                   Standard Room
+
                 </option>
 
+
+
                 <option>
+
                   Deluxe Room
+
                 </option>
 
+
+
                 <option>
+
                   Family Room
+
                 </option>
+
+
 
               </select>
 
+
+
             </div>
 
+
+
             <div class="field">
+
+
 
               <label for="checkIn">
+
                 Check-in date *
+
               </label>
 
+
+
               <input
+
                 id="checkIn"
+
                 name="checkIn"
+
                 type="date"
+
                 required
+
               >
+
+
 
             </div>
 
+
+
             <div class="field">
+
+
 
               <label for="checkOut">
+
                 Check-out date *
+
               </label>
+
+
 
               <input
+
                 id="checkOut"
+
                 name="checkOut"
+
                 type="date"
+
                 required
+
               >
 
+
+
             </div>
 
+
+
             <div class="field">
+
+
 
               <label for="guests">
+
                 Number of guests *
+
               </label>
 
+
+
               <select
+
                 id="guests"
+
                 name="guests"
+
                 required>
 
+
+
                 <option value="">
+
                   Select guests
+
                 </option>
 
+
+
                 <option>
+
                   1 guest
+
                 </option>
 
+
+
                 <option>
+
                   2 guests
+
                 </option>
 
+
+
                 <option>
+
                   3 guests
+
                 </option>
 
+
+
                 <option>
+
                   4 guests
+
                 </option>
 
+
+
                 <option>
+
                   5+ guests
+
                 </option>
+
+
 
               </select>
 
+
+
             </div>
+
+
 
             <div class="field">
 
+
+
               <label for="purpose">
+
                 Purpose of visit
+
               </label>
 
+
+
               <select
+
                 id="purpose"
+
                 name="purpose">
 
+
+
                 <option>
+
                   Leisure / Vacation
+
                 </option>
 
+
+
                 <option>
+
                   Family visit
+
                 </option>
 
+
+
                 <option>
+
                   Business
+
                 </option>
 
+
+
                 <option>
+
                   School / Educational trip
+
                 </option>
 
+
+
                 <option>
+
                   Other
+
                 </option>
+
+
 
               </select>
 
+
+
             </div>
 
+
+
             <div class="field full">
+
+
 
               <label for="requests">
+
                 Special requests (optional)
+
               </label>
 
+
+
               <textarea
+
                 id="requests"
+
                 name="requests"
+
                 placeholder="Tell us about any preferences or questions."
+
               ></textarea>
 
+
+
             </div>
+
+
 
             <div class="field full">
 
+
+
               <button
+
                 class="btn"
+
                 type="submit">
+
                 Submit Inquiry →
+
               </button>
+
+
 
             </div>
 
+
+
           </div>
 
+
+
           <div
+
             class="form-result"
+
             id="formResult"
+
             role="status"
+
             aria-live="polite">
+
           </div>
+
+
 
         </form>
 
+
+
       </div>
 
+
+
     </section>
+
+
 
     <section id="contact">
 
+
+
       <div class="container">
+
+
 
         <div class="section-head">
 
+
+
           <div class="eyebrow">
+
             We’re here to help
+
           </div>
 
+
+
           <h2>
+
             Contact & guest information.
+
           </h2>
 
+
+
           <p>
+
             Planning a visit? Get in touch with Verde Haven Boutique Hotel
+
             for guest information and reservation inquiries.
+
           </p>
 
+
+
         </div>
+
+
 
         <div class="contact-grid">
 
+
+
           <div class="contact-card">
 
+
+
             <h3>
+
               Get in touch
+
             </h3>
 
+
+
             <div class="contact-row">
 
+
+
               <div class="symbol">
+
                 ⌖
+
               </div>
+
+
 
               <div>
 
+
+
                 <strong>
+
                   Location
+
                 </strong>
 
+
+
                 <p>
+
                   Calapan City, Oriental Mindoro, Philippines
+
                 </p>
+
+
 
               </div>
 
+
+
             </div>
+
+
 
             <div class="contact-row">
 
+
+
               <div class="symbol">
+
                 ☎
+
               </div>
+
+
 
               <div>
 
+
+
                 <strong>
+
                   Phone
+
                 </strong>
 
+
+
                 <p>
+
                   <a href="tel:09915975630">
+
                     09915975630
+
                   </a>
+
                 </p>
+
+
 
               </div>
 
+
+
             </div>
+
+
 
             <div class="contact-row">
 
+
+
               <div class="symbol">
+
                 ✉
+
               </div>
+
+
 
               <div>
 
+
+
                 <strong>
+
                   Email
+
                 </strong>
 
+
+
                 <p>
+
                   <a href="mailto:verdehavenhotel@gmail.com">
+
                     verdehavenhotel@gmail.com
+
                   </a>
+
                 </p>
+
+
 
               </div>
 
+
+
             </div>
+
+
 
             <div class="contact-row">
 
+
+
               <div class="symbol">
+
                 ◷
+
               </div>
+
+
 
               <div>
 
+
+
                 <strong>
+
                   Guest assistance
+
                 </strong>
 
+
+
                 <p>
+
                   Our team is available to assist guests with inquiries,
+
                   room information, and reservation concerns.
+
                 </p>
+
+
 
               </div>
 
+
+
             </div>
+
+
 
             <!-- CLICKABLE FACEBOOK -->
+
             <div class="contact-row">
 
+
+
               <div class="symbol">
+
                 ◎
+
               </div>
+
+
 
               <div>
 
+
+
                 <strong>
+
                   Social media
+
                 </strong>
+
+
 
                 <p>
 
+
+
                   <a
+
                     class="social-link"
+
                    href="https://www.facebook.com/p/Jerwin-Evangelista-61578355177579/"
-                    target="_blank"
+
+                    target="\_blank"
+
                     rel="noopener noreferrer"
+
                     aria-label="Visit Verde Haven Boutique Hotel on Facebook">
+
+
 
                     Verde Haven Boutique Hotel - Facebook ↗
 
+
+
                   </a>
+
+
 
                 </p>
 
+
+
               </div>
+
+
 
             </div>
 
+
+
           </div>
+
+
 
           <div>
 
+
+
             <iframe
+
               class="map-frame"
+
               title="Map showing Calapan City, Oriental Mindoro"
+
               loading="lazy"
+
               referrerpolicy="no-referrer-when-downgrade"
+
               src="https://maps.google.com/maps?q=Calapan%20City%2C%20Oriental%20Mindoro%2C%20Philippines&t=&z=13&ie=UTF8&iwloc=&output=embed">
+
             </iframe>
 
+
+
             <p
+
               class="muted"
+
               style="font-size:.8rem;margin-top:8px">
+
+
 
               Calapan City, Oriental Mindoro, Philippines
 
+
+
             </p>
+
+
 
           </div>
 
+
+
         </div>
+
+
 
         <div class="faq">
 
+
+
           <div class="section-head">
 
+
+
             <div class="eyebrow">
+
               Helpful answers
+
             </div>
 
+
+
             <h2>
+
               Frequently asked questions.
+
             </h2>
 
+
+
             <p>
+
               Find quick answers to common questions about staying at
+
               Verde Haven Boutique Hotel.
+
             </p>
+
+
 
           </div>
 
+
+
           <details>
 
+
+
             <summary>
+
               How can I make a reservation?
+
             </summary>
 
+
+
             <p>
+
               You can submit your preferred dates, room type, number of guests,
+
               and contact information through the Reservation Inquiry form.
+
               The hotel can then be contacted to confirm availability and booking details.
+
             </p>
+
+
 
           </details>
 
+
+
           <details>
 
+
+
             <summary>
+
               What room types are available?
+
             </summary>
 
+
+
             <p>
+
               Verde Haven offers Standard, Deluxe, and Family Room options.
+
               Each room is designed to provide a comfortable and relaxing stay
+
               for different types of guests.
+
             </p>
+
+
 
           </details>
 
+
+
           <details>
 
+
+
             <summary>
+
               What time is check-in and check-out?
+
             </summary>
 
+
+
             <p>
+
               Standard check-in and check-out times should be confirmed directly
+
               with the hotel when making a reservation, as schedules may vary
+
               depending on availability and hotel policy.
+
             </p>
+
+
 
           </details>
 
+
+
           <details>
 
+
+
             <summary>
+
               What payment methods are accepted?
+
             </summary>
 
+
+
             <p>
+
               Available payment methods should be confirmed with the hotel
+
               before completing a reservation. Guests may contact the hotel
+
               through the phone number or email provided on this website.
+
             </p>
+
+
 
           </details>
 
+
+
           <details>
 
+
+
             <summary>
+
               Can I request a specific room?
+
             </summary>
 
+
+
             <p>
+
               Yes. Guests may indicate their preferred room type when submitting
+
               a reservation inquiry. Room requests are subject to availability.
+
             </p>
+
+
 
           </details>
 
+
+
           <details>
 
+
+
             <summary>
+
               How can I contact Verde Haven Boutique Hotel?
+
             </summary>
 
+
+
             <p>
+
               You may contact Verde Haven Boutique Hotel through
+
               <a href="tel:09915975630">
+
                 09915975630
+
               </a>
+
               or email us at
+
               <a href="mailto:verdehavenhotel@gmail.com">
+
                 verdehavenhotel@gmail.com
+
               </a>.
+
               You may also visit our Facebook profile through the Social Media
+
               link above.
+
             </p>
 
+
+
           </details>
+
+
 
           <details>
 
+
+
             <summary>
+
               Where is Verde Haven Boutique Hotel located?
+
             </summary>
 
+
+
             <p>
+
               Verde Haven Boutique Hotel is located in Calapan City,
+
               Oriental Mindoro, Philippines.
+
             </p>
 
+
+
           </details>
+
+
 
         </div>
 
+
+
       </div>
+
+
 
     </section>
 
+
+
     <div class="cta-band">
+
+
 
       <div class="container cta-inner">
 
+
+
         <div>
 
+
+
           <h2>
+
             Your comfortable Mindoro stay awaits.
+
           </h2>
 
+
+
           <p>
+
             Stay. Relax. Discover — at Verde Haven Boutique Hotel.
+
           </p>
+
+
 
         </div>
 
+
+
         <a class="btn" href="#booking">
+
           Plan Your Stay →
+
         </a>
+
+
 
       </div>
 
+
+
     </div>
+
+
 
   </main>
 
+
+
   <footer>
+
+
 
     <div class="container">
 
+
+
       <div class="footer-top">
+
+
 
         <div class="footer-brand">
 
+
+
           <a class="brand" href="#home">
+
+
 
             <span class="brand-mark" aria-hidden="true">
 
+
+
               <svg viewBox="0 0 48 48" fill="none">
 
+
+
                 <path
+
                   d="M24 39V21"
+
                   stroke="currentColor"
+
                   stroke-width="2.4"
+
                   stroke-linecap="round"/>
 
+
+
                 <path
+
                   d="M24 28C9 28 7 16 8 9c12 0 19 6 16 19Z"
+
                   fill="currentColor"/>
 
+
+
                 <path
+
                   d="M24 22C24 10 32 6 41 7c0 11-6 18-17 19"
+
                   fill="currentColor"/>
 
+
+
                 <path
+
                   d="M13 39h22M17 34h14"
+
                   stroke="currentColor"
+
                   stroke-width="2.4"
+
                   stroke-linecap="round"/>
+
+
 
               </svg>
 
+
+
             </span>
+
+
 
             <span class="brand-name">
 
+
+
               VERDE HAVEN
 
+
+
               <span class="brand-sub">
+
                 BOUTIQUE HOTEL
+
               </span>
+
+
 
             </span>
 
+
+
           </a>
 
+
+
           <p>
+
             A welcoming accommodation concept inspired by nature,
+
             local culture, and the warm hospitality of Mindoro.
+
           </p>
+
+
 
         </div>
 
+
+
         <nav
+
           class="footer-links"
+
           aria-label="Footer navigation">
 
+
+
           <a href="#about">
+
             About Us
+
           </a>
+
+
 
           <a href="#rooms">
+
             Rooms & Rates
+
           </a>
+
+
 
           <a href="#booking">
+
             Reservations
+
           </a>
+
+
 
           <a href="#contact">
+
             Contact
+
           </a>
 
+
+
           <!-- CLICKABLE FACEBOOK -->
+
           <a
+
             class="social-link"
+
            href="https://www.facebook.com/p/Jerwin-Evangelista-61578355177579/"
-            target="_blank"
+
+            target="\_blank"
+
             rel="noopener noreferrer"
+
             aria-label="Visit Verde Haven Boutique Hotel on Facebook">
+
+
 
             Facebook ↗
 
+
+
           </a>
+
+
 
         </nav>
 
+
+
       </div>
+
+
 
       <div class="copyright">
 
-        <span>
-          © <span id="year"></span>
-          Verde Haven Boutique Hotel.
-          School project concept.
-        </span>
+
 
         <span>
-          Stay. Relax. Discover.
+
+          © <span id="year"></span>
+
+          Verde Haven Boutique Hotel.
+
+          School project concept.
+
         </span>
+
+
+
+        <span>
+
+          Stay. Relax. Discover.
+
+        </span>
+
+
 
       </div>
 
+
+
     </div>
+
+
 
   </footer>
 
+
+
   <script>
 
+
+
     const menuToggle =
+
       document.getElementById('menuToggle');
 
+
+
     const navlinks =
+
       document.getElementById('navlinks');
+
+
 
     menuToggle.addEventListener('click', () => {
 
+
+
       const open =
+
         navlinks.classList.toggle('open');
 
+
+
       menuToggle.setAttribute(
+
         'aria-expanded',
+
         String(open)
+
       );
 
+
+
       menuToggle.textContent =
+
         open ? '✕' : '☰';
 
+
+
     });
+
+
 
     navlinks.querySelectorAll('a').forEach(link =>
 
+
+
       link.addEventListener('click', () => {
+
+
 
         navlinks.classList.remove('open');
 
+
+
         menuToggle.setAttribute(
+
           'aria-expanded',
+
           'false'
+
         );
+
+
 
         menuToggle.textContent = '☰';
 
+
+
       })
 
+
+
     );
+
+
 
     document.querySelectorAll('.choose-room').forEach(button =>
 
+
+
       button.addEventListener('click', () => {
 
+
+
         document.getElementById('roomType').value =
+
           button.dataset.room;
 
+
+
         document.getElementById('booking').scrollIntoView({
+
           behavior:'smooth'
+
         });
+
+
 
       })
 
+
+
     );
 
+
+
     const checkIn =
+
       document.getElementById('checkIn');
 
+
+
     const checkOut =
+
       document.getElementById('checkOut');
 
+
+
     const today =
+
       new Date();
 
+
+
     const localToday =
+
       new Date(
+
         today.getTime() -
+
         today.getTimezoneOffset() * 60000
+
       )
+
       .toISOString()
+
       .slice(0,10);
 
+
+
     checkIn.min =
+
       localToday;
 
+
+
     checkOut.min =
+
       localToday;
+
+
 
     checkIn.addEventListener('change', () => {
 
+
+
       checkOut.min =
+
         checkIn.value || localToday;
 
+
+
       if(
+
         checkOut.value &&
+
         checkOut.value <= checkIn.value
+
       ){
+
+
 
         checkOut.value = '';
 
+
+
       }
+
+
 
     });
 
+
+
     document.getElementById('bookingForm').addEventListener(
+
       'submit',
+
       event => {
+
+
 
         event.preventDefault();
 
+
+
         const form =
+
           event.currentTarget;
+
+
 
         if(!form.reportValidity()) return;
 
+
+
         if(checkOut.value <= checkIn.value){
 
+
+
           checkOut.setCustomValidity(
+
             'Check-out must be after check-in.'
+
           );
+
+
 
           checkOut.reportValidity();
 
+
+
           checkOut.setCustomValidity('');
+
+
 
           return;
 
+
+
         }
 
+
+
         const data =
+
           new FormData(form);
 
+
+
         const result =
+
           document.getElementById('formResult');
 
+
+
         result.innerHTML =
+
           '<strong>Reservation inquiry received.</strong><br>' +
+
           'Thank you, ' +
+
           escapeText(data.get('guestName')) +
+
           '. Your selected room is <strong>' +
+
           escapeText(data.get('roomType')) +
+
           '</strong>, for ' +
+
           escapeText(data.get('guests')) +
+
           '. Dates: ' +
+
           escapeText(data.get('checkIn')) +
+
           ' to ' +
+
           escapeText(data.get('checkOut')) +
+
           '. Please contact the hotel to confirm availability and booking details.';
+
+
 
         form.reset();
 
+
+
         result.classList.add('show');
 
+
+
         result.scrollIntoView({
+
           behavior:'smooth',
+
           block:'nearest'
+
         });
 
+
+
       }
+
     );
+
+
 
     function escapeText(value){
 
+
+
       return String(value ?? '').replace(
+
         /[&<>"']/g,
+
         char => ({
+
           '&':'&amp;',
+
           '<':'&lt;',
+
           '>':'&gt;',
+
           '"':'&quot;',
+
           "'":'&#39;'
+
         }[char])
+
       );
+
+
 
     }
 
+
+
     document.getElementById('year').textContent =
+
       new Date().getFullYear();
+
+
+
+
+
+
+
+    // Search the website and prioritize the most relevant destination.
+    const siteSearchForm = document.getElementById('siteSearchForm');
+    const siteSearchInput = document.getElementById('siteSearch');
+    const searchStatus = document.getElementById('searchStatus');
+
+    const searchDestinations = [
+      { target: '#home', terms: ['home', 'welcome', 'hero'] },
+      { target: '#about', terms: ['about', 'about us', 'hotel', 'who we are', 'introduction'] },
+      { target: '#mission', terms: ['mission', 'purpose', 'goal'] },
+      { target: '#vision', terms: ['vision', 'future', 'aspiration'] },
+      { target: '#target-market', terms: ['target market', 'customers', 'guests', 'tourists', 'travelers', 'families', 'couples', 'students', 'business travelers'] },
+      { target: '#core-values', terms: ['core values', 'values', 'comfort', 'hospitality', 'quality', 'affordability', 'local culture'] },
+      { target: '#rooms', terms: ['room', 'rooms', 'rates', 'price', 'prices', 'standard', 'deluxe', 'family room', 'amenities', 'wifi', 'wi-fi'] },
+      { target: '.experience', terms: ['services', 'service', 'guest assistance', 'housekeeping', 'travel tips'] },
+      { target: '#booking', terms: ['reservation', 'reservations', 'booking', 'book', 'inquiry', 'check-in', 'check-out', 'check in', 'check out'] },
+      { target: '#contact', terms: ['contact', 'phone', 'email', 'facebook', 'location', 'address', 'map', 'faq', 'frequently asked questions', 'payment'] }
+    ];
+
+    function normalizeSearchText(value) {
+      return value.toLowerCase().replace(/[^a-z0-9\s-]/g, ' ').replace(/\s+/g, ' ').trim();
+    }
+
+    siteSearchForm.addEventListener('submit', event => {
+      event.preventDefault();
+      const rawQuery = siteSearchInput.value.trim();
+      const query = normalizeSearchText(rawQuery);
+
+      if (!query) {
+        searchStatus.textContent = 'Type a keyword to search the website, such as “rooms”, “mission”, or “contact”.';
+        siteSearchInput.focus();
+        return;
+      }
+
+      const destination = searchDestinations.find(item =>
+        item.terms.some(term => normalizeSearchText(term) === query) ||
+        (query.split(' ').length > 1 && item.terms.some(term => normalizeSearchText(term).includes(query)))
+      );
+
+      let target = destination ? document.querySelector(destination.target) : null;
+
+      if (!target) {
+        const candidates = Array.from(document.querySelectorAll('main section, footer, .about-info-card, .faq details'));
+        const ranked = candidates.map(element => {
+          const heading = element.querySelector('h1,h2,h3,summary');
+          const headingText = normalizeSearchText(heading ? heading.textContent : '');
+          const bodyText = normalizeSearchText(element.textContent || '');
+          let score = 0;
+          if (headingText === query) score += 10;
+          else if (headingText.includes(query)) score += 6;
+          if (bodyText.includes(query)) score += 2;
+          return { element, score };
+        }).filter(item => item.score > 0).sort((a,b) => b.score - a.score);
+        target = ranked.length ? ranked[0].element : null;
+      }
+
+      document.querySelectorAll('.search-highlight').forEach(element => element.classList.remove('search-highlight'));
+
+      if (target) {
+        const heading = target.querySelector('h1,h2,h3,summary');
+        const label = heading ? heading.textContent.trim().replace(/\s+/g, ' ') : (target.id || 'matching section');
+        searchStatus.textContent = `Result found for “${rawQuery}”. Showing: ${label}.`;
+        target.classList.add('search-highlight');
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        searchStatus.textContent = `No results found for “${rawQuery}”. Try “rooms”, “mission”, “vision”, “target market”, “core values”, “reservation”, or “contact”.`;
+      }
+    });
+
+    siteSearchInput.addEventListener('input', () => {
+      if (!siteSearchInput.value.trim()) searchStatus.textContent = '';
+    });
+
+
 
   </script>
 
+
+
 </body>
+
 </html>
